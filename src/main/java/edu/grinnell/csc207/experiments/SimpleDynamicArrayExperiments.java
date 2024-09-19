@@ -19,7 +19,7 @@ public class SimpleDynamicArrayExperiments {
    * Square a big integer.
    *
    * @param i
-   *   The value to square.
+   *          The value to square.
    *
    * @return i*i.
    */
@@ -35,12 +35,21 @@ public class SimpleDynamicArrayExperiments {
    * Run the experiments.
    *
    * @param args
-   *   Command-line arguments (ignored).
+   *             Command-line arguments (ignored).
    */
   public static void main(String[] args) {
     PrintWriter pen = new PrintWriter(System.out, true);
-    DynamicArray<BigInteger> numbers =
-        new SimpleDynamicArray<BigInteger>();
+    DynamicArray<BigInteger> numbers = new SimpleDynamicArray<BigInteger>();
+
+    DynamicArray<String> strings = new SimpleDynamicArray<String>();
+
+    for (int i = 0; i < 10; i++) {
+      strings.set(i, String.valueOf(i));
+    }
+
+    for (int i = 0; i < 10; i++) {
+      pen.println("strings[" + i + "] = " + strings.get(i));
+    } // for
 
     // Set some values
     for (int i = 0; i < 10; i++) {
