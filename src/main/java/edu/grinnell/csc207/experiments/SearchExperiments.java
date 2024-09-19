@@ -41,6 +41,7 @@ public class SearchExperiments {
         pen.println("A small object: "
                 + SearchUtils.search(objects, SmallObjects.PRED));
         pen.println("A small string: " + SearchUtils.search(strings, SmallObjects.PRED));
+        pen.println("A small string: " + SearchUtils.search(numbers, SmallObjects.PRED));
     } // main(String[])
 
 } // class SearchExperiments
