@@ -40,6 +40,7 @@ public class SearchExperiments {
                 + SearchUtils.search(numbers, OddInteger.PRED));
         pen.println("A small object: "
                 + SearchUtils.search(objects, SmallObjects.PRED));
+        pen.println("A small string: " + SearchUtils.search(strings, SmallObjects.PRED));
     } // main(String[])
 
 } // class SearchExperiments
