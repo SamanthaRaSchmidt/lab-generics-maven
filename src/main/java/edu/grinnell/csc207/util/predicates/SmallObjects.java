@@ -45,8 +45,6 @@ public class SmallObjects implements Predicate<Object> {
    *   true if val is small and false otherwise.
    */
   public boolean holds(Object val) {
-    String value = new String();
-    value = String.valueOf(val);
-    return value.length() < 5;
+    return val.toString().length() < 5;
   } // holds(String)
 } // class SmallString
